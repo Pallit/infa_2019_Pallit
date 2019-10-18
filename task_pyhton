@@ -65,4 +65,58 @@ penColor(26,26,26)
 rectangle(0,250,300,280)
 rectangle(15,210,285,225)
 
+
+rectangle(61,210,76,250)
+rectangle(115,210,130,250)
+rectangle(169,210,184,250)
+rectangle(224,210,238,250)
+
+
+
+
+
+rectangle(9,250,15,225)
+rectangle(285,225,291,250)
+
+
+brushColor(43, 17, 0)
+rectangle(50, 350, 100, 420)
+rectangle(125, 350, 175, 420)
+brushColor(212, 170, 0)
+rectangle(200,350, 250, 420)
+brushColor(26,26,26)
+rectangle(75,25,95,120)
+
+
+brushColor(179,179,179)
+penColor(179,179,179)
+circle(375,450,20)
+polygon([(355,450),(320,550),(440,525),(395,450)])
+penColor(0,0,0)
+brushColor(0,0,0)
+circle(330,550,20)
+circle(380,540,20)
+circle(430,530,20)
+
+penColor(135,205,222)
+brushColor(135,205,222)
+circle(365,450,5)
+penColor(0,0,0)
+brushColor(0,0,0)
+circle(363,450,2)
+penColor(255,255,255)
+brushColor(255,255,255)
+draw_el(2, 1, 367, 450)
+
+penColor(135,205,222)
+brushColor(135,205,222)
+circle(385,450,5)
+penColor(0,0,0)
+brushColor(0,0,0)
+circle(383,450,2)
+penColor(255,255,255)
+brushColor(255,255,255)
+draw_el(2, 1, 387, 450)
+
+
 run()
