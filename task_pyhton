@@ -1,0 +1,68 @@
+from graph import *
+import math
+
+
+
+def draw_el(a, b, xx ,yy):
+    mas = []
+    x0 = a*2
+    if (x0 > 100):
+        sh = int(x0/100)
+    else:
+        sh = 1
+    x = 0
+    for x in range(xx-a, xx+a, sh):
+        y = int(yy + b*math.sqrt(1-((x-xx)*(x-xx))/(a*a)))
+        s = (x, y)
+        mas.append(s)
+    mas.append((xx+a,yy))
+    for x in range(xx+a, xx-a, -sh):
+        y = int(yy - b*math.sqrt(1-((x-xx)*(x-xx))/(a*a)))
+        s = (x, y)
+        mas.append(s)
+    polygon(mas)
+
+
+windowSize(500, 600)
+brushColor(0, 0, 0)
+rectangle(0,0,500,600)
+penColor(102,102,102)
+brushColor(102,102,102)
+rectangle(0,0,500,250)
+brushColor(0, 0, 0)
+draw_el(200, 25, 400, 150)
+brushColor(255, 255, 255)
+circle(450,50,40)
+brushColor(77, 77, 77)
+draw_el(250, 20, 500, 100)
+
+brushColor(26,26,26)
+rectangle(50,50,60,120)
+brushColor(51, 51, 51)
+draw_el(200, 25, 200, 75)
+brushColor(77, 77, 77)
+draw_el(150, 20, 350, 50)
+brushColor(40, 34, 11)
+
+
+penColor(40, 34, 11)
+rectangle(25,125,275,450)
+
+
+
+penColor(0,0,0)
+brushColor(0, 0, 0)
+polygon([(0,125),(25,100),(275,100),(300,125)])
+brushColor(72, 62, 55)
+penColor(72, 62, 55)
+rectangle(55,125,82,250)
+rectangle(109,125,136,250)
+rectangle(163,125,190,250)
+rectangle(217,125,244,250)
+
+brushColor(26, 26, 26)
+penColor(26,26,26)
+rectangle(0,250,300,280)
+rectangle(15,210,285,225)
+
+run()
